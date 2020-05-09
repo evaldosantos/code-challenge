@@ -1,0 +1,71 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+body, #root {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  font-family: Roboto, sans-serif;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  width: 500px;
+  margin: 0 auto;
+}
+
+main {
+  flex-grow: 1;
+  width: 500px;
+  margin: 0 auto;
+  overflow-y: scroll;
+}
+
+footer {
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 3;
+  width: 500px;
+  padding: 5px;
+  margin: 0 auto;
+}
+
+form > button {
+  padding: 5px;
+}
+.row {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  margin: 5px 0px;
+}
+
+.row > label {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  padding: 5px;
+}
+
+.row > input {
+  grid-column-start: 3;
+  grid-column-end: -1;
+  padding: 5px;
+}
+
+footer {
+  margin-bottom: 50px;
+}
+
+.invalid {
+  border: 1px solid red;
+}
+
+
+
